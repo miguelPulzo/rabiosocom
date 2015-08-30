@@ -40,14 +40,12 @@ function sendMessage(){
         $( "#all_messages" ).html(' ');
         $( "#all_messages" ).html( msg + cur_data);
         */
-        alert("Todo bien");
         $( "#expresate" ).val('');
         $( "#all_messages" ).html( msg );
 
     });
 
     request.fail(function( jqXHR, textStatus ) {
-        alert("Todo bien");
         //alert( "Request failed: " + textStatus );
         var msg = 'Error Send Message: ' + textStatus;
         var request_fm = $.ajax({
