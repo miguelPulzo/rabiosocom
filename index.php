@@ -3,14 +3,13 @@
     <head>
         <title><?=$siteName?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-
-        <script src="http://www.geoplugin.net/javascript.gp"></script>
         <script src="js/functions.js"></script>
         <script src="js/ga.js"></script>
 
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
         <link href='//fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
         <link href='//fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
