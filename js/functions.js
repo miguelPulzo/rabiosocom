@@ -11,7 +11,7 @@ $(document).ready(
         //alert("Your location is: " + geoplugin_countryName() + ", " + geoplugin_region() + ", " + geoplugin_city());
 
         setInterval(function () {
-            console.log('it works' + new Date());
+            console.log('it works :: ' + new Date());
             getAllMessages();
         },5000);
     }
@@ -40,12 +40,14 @@ function sendMessage(){
         $( "#all_messages" ).html(' ');
         $( "#all_messages" ).html( msg + cur_data);
         */
+        alert("Todo bien");
         $( "#expresate" ).val('');
         $( "#all_messages" ).html( msg );
 
     });
 
     request.fail(function( jqXHR, textStatus ) {
+        alert("Todo bien");
         //alert( "Request failed: " + textStatus );
         var msg = 'Error Send Message: ' + textStatus;
         var request_fm = $.ajax({

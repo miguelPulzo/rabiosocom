@@ -1,10 +1,16 @@
 <?php
     include('controller/control.php');
-    //echo '<div class="message">' . $_POST['data'] . '</div>';
+
+    //----------
+    $a = array("'", '"');
+    $b = array("\'", '\"');
+    $_POST['data'] = str_replace($a,$b,$_POST['data']);
+    //----------
+
     $con = new Control();
 
     $con->connect();
-    $query = 'INSERT INTO message(message, created) VALUES ("'.$_POST['data'].'", NOW())';
+    $query = "INSERT INTO message(message, created) VALUES ('".$_POST['data']."', NOW())";
     $con->insert( $query );
     $con->close();
 
