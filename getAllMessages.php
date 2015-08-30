@@ -6,10 +6,12 @@
     $data = $con->getAllMessages();
     $con->close();
 
-    foreach( $data AS $item ){
-        $classname = 'impar';
-        if( $item['id'] % 2 == 0 )
-            $classname = 'par';
-        echo '<div class="message '.$classname.'">' . $item['message'] . '</div>';
-        //echo '<div class="message">' . $item['message'] . '</div>';
+    if( !empty($data) ){
+        foreach( $data AS $item ){
+            $classname = 'impar';
+            if( $item['id'] % 2 == 0 )
+                $classname = 'par';
+            echo '<div class="message '.$classname.'">' . $item['message'] . '</div>';
+            //echo '<div class="message">' . $item['message'] . '</div>';
+        }
     }
