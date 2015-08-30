@@ -131,7 +131,9 @@ span.perro{
     font-weight: bold;
     font-style: italic;
 }
-
+.idHidden{
+    display: none;
+}
 /* -------------------- */
 @media all and (max-device-width: 1024px) {
     .message {

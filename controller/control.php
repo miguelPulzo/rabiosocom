@@ -42,7 +42,7 @@ class Control extends Datos{
     //----------
     function getAllMessages( $limit = 15 ){
         $data = NULL;
-        $resultado = $this->mysqli->query( 'SELECT * FROM message ORDER BY id DESC LIMIT '.$limit );
+        $resultado = $this->mysqli->query( 'SELECT id, message FROM message ORDER BY id DESC LIMIT '.$limit );
         //while( $registro = $resultado->fetch_object() ){
         while( $registro = $resultado->fetch_assoc() ){
             $data[] = $registro;
