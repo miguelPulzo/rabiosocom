@@ -9,8 +9,7 @@ $con->insert( $query );
 $con->close();
 
 $con->connect();
-$query = 'SELECT * FROM message ORDER BY id DESC LIMIT 5';
-$data = $con->query( $query );
+$data = $con->getAllMessages();
 $con->close();
 
 foreach( $data AS $item ){

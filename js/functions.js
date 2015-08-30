@@ -1,3 +1,29 @@
+
+//Function Makes and executes query of Messages each for 5 seconds
+$(document).ready(
+    function(){
+        getAllMessages();
+        var widthDevice = window.innerWidth;
+        $('#expresate').css('width', (widthDevice - (widthDevice/2)));
+        $('.all_messages').css('width', (widthDevice - 200));
+        $('.sendMessage').css('width', (widthDevice - 200));
+
+        //alert("Your location is: " + geoplugin_countryName() + ", " + geoplugin_region() + ", " + geoplugin_city());
+
+        setInterval(function () {
+            console.log('it works' + new Date());
+            getAllMessages();
+        },5000);
+    }
+);
+
+//Function to alert of errors
+$(document).ajaxError(
+    function (event, jqXHR, ajaxSettings, thrownError) {
+        console.log('Error ajax  ::  [event:' + event + '], [jqXHR:' + jqXHR + '], [ajaxSettings:' + ajaxSettings + '], [thrownError:' + thrownError + '])');
+    }
+);
+
 function sendMessage(){
 
     var msg_expresate= $("#expresate").val();
@@ -14,7 +40,7 @@ function sendMessage(){
         $( "#all_messages" ).html(' ');
         $( "#all_messages" ).html( msg + cur_data);
         */
-        $( "#expresate" ).html('');
+        $( "#expresate" ).val('');
         $( "#all_messages" ).html( msg );
 
     });
@@ -38,15 +64,7 @@ function sendMessage(){
 
 }
 
-$(document).ready(
-    function(){
-        getAllMessages();
-
-        var widthDevice = window.innerWidth;
-        alert( widthDevice );
-    }
-);
-
+//Function to execute script inside getAllMessages.php script
 function getAllMessages(){
     var msg_expresate= $("#expresate").val();
     var request = $.ajax({
@@ -60,6 +78,7 @@ function getAllMessages(){
     });
 }
 
+//Function to make the count of characters on Textarea
 function countChar(val) {
     var len = val.value.length;
     var maxlen = 200;
@@ -70,12 +89,16 @@ function countChar(val) {
     }
 };
 
-function setEmpty( element ){
-    element.text = "";
-    element.value = "";
-}
+//Function to detect event enter key
+function onTextAreaChange() {
+    var key = window.event.keyCode;
 
-$(document).ajaxError(
-    function (event, jqXHR, ajaxSettings, thrownError) {
-        alert('[event:' + event + '], [jqXHR:' + jqXHR + '], [ajaxSettings:' + ajaxSettings + '], [thrownError:' + thrownError + '])');
-    });
+    // If the user has pressed enter
+    if (key == 13) {
+        sendMessage();
+        return false;
+    }
+    else {
+        return true;
+    }
+}

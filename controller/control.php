@@ -45,6 +45,18 @@ class Control{
     //----------
 
     //----------
+    function getAllMessages( $limit = 15 ){
+        $data = NULL;
+        $resultado = $this->mysqli->query( 'SELECT * FROM message ORDER BY id DESC LIMIT '.$limit );
+        //while( $registro = $resultado->fetch_object() ){
+        while( $registro = $resultado->fetch_assoc() ){
+            $data[] = $registro;
+        }
+        return ($data);
+    }
+    //----------
+
+    //----------
     function insert( $sql = NULL ){
         if( !empty( $sql ) )
             $this->mysqli->query( $sql );
