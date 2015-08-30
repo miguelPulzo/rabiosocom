@@ -1,6 +1,7 @@
+<?php $siteName = 'Hatelines.com'; ?>
 <html>
     <head>
-        <title>Rabioso.com</title>
+        <title><?=$siteName?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
@@ -15,9 +16,7 @@
     </head>
 <body>
 
-<header>
-Rabioso.com
-</header>
+<header><?=$siteName?></header>
 
 <div class="sidebar-left"></div>
 <div class="container">
@@ -43,9 +42,7 @@ Rabioso.com
 </div>
 <div class="sidebar-right"></div>
 <!--
-<footer>
-Rabioso.com - Una idea de la Gente y para la Gente
-</footer>
+<footer><?=$siteName?> - Una idea de la Gente y para la Gente</footer>
 -->
 </body>
 </html>
