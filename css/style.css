@@ -6,7 +6,7 @@ body{
 }
 header{
     top: 0;
-    border-bottom: 1px dotted red;
+    border-bottom: 1px solid #dddddd;
     font-size: 28px;
 }
 footer{
@@ -17,10 +17,14 @@ footer{
 header, footer{
     /* font-family: 'Montserrat'; */
     font-family: 'Poiret One', cursive;
-    padding: 18px;
-    /* position: absolute; */
-    width: 94%;
-    margin: 0 auto;
+    padding: 5px 10px;
+    position: absolute;
+    width: 98.5%;
+    /* margin: 0 auto; */
+    background-color: #000000;
+    color: #ffffff;
+    margin-left: -10px;
+    font-weight: bold;
 }
 .cuerpo {
     padding: 10px;
@@ -52,7 +56,7 @@ header, footer{
     /* width: 300px; */
     /* border: 1px solid green; */
     width: 100%;
-    margin: 20px auto;
+    margin: 40px auto 20px auto;
 }
 
 .message{
@@ -92,7 +96,8 @@ header, footer{
 }
 
 .msg_top{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 .right{
     float: right;
@@ -136,6 +141,9 @@ span.perro{
 }
 /* -------------------- */
 @media all and (max-device-width: 1024px) {
+    header, footer{
+        width: 98%;
+    }
     .message {
         width: 900px;
     }
@@ -152,6 +160,9 @@ span.perro{
 }
 /* -------------------- */
 @media all and (max-device-width: 414px) {
+    header, footer{
+        width: 95%;
+    }
     .message {
         width: 290px;
     }
@@ -168,6 +179,9 @@ span.perro{
 }
 /* -------------------- */
 @media all and (max-device-width: 375px) {
+    header, footer{
+        width: 95%;
+    }
     .message {
         width: 250px;
     }
@@ -184,6 +198,9 @@ span.perro{
 }
 /* -------------------- */
 @media all and (max-device-width: 320px) {
+    header, footer{
+        width: 94%;
+    }
     .message {
         width: 200px;
     }
