@@ -1,11 +1,6 @@
 <?php
-
-class Control{
-    private $host = 'localhost';
-    private $user = 'root';
-    private $clave = '4m4z0n=n3';
-    private $mysqli = NULL;
-    private $database = 'rabioso';
+include('config/datos.php');
+class Control extends Datos{
 
     //----------
     function __construct(){}
