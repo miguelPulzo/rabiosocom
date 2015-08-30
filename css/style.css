@@ -1,0 +1,198 @@
+*{
+    font-family: verdana, arial;
+}
+body{
+    font-size: 16px;
+}
+header{
+    top: 0;
+    border-bottom: 1px dotted red;
+    font-size: 28px;
+}
+footer{
+    bottom: 0;
+    border-top: 1px dotted red;
+    font-size: 24px;
+}
+header, footer{
+    /* font-family: 'Montserrat'; */
+    font-family: 'Poiret One', cursive;
+    padding: 18px;
+    /* position: absolute; */
+    width: 94%;
+    margin: 0 auto;
+}
+.cuerpo {
+    padding: 10px;
+    /* height: 400px; */
+    position: top;
+    margin-top: 10px;
+    /* overflow-y: scroll; */
+
+    margin-left: 30px;
+    /* float: left; */
+
+    /*
+    border-radius: 10px;
+    border-top: 1px solid #eeeeee;
+    box-shadow: 2px 2px 5px #dddddd;
+    -webkit-box-shadow: 2px 2px 5px #dddddd;
+    -moz-box-shadow: 2px 2px 5px #dddddd;
+    */
+}
+
+.sendMessage{
+    /* border: 1px solid darkorange; */
+    margin: 10px auto;
+    height: 50px;
+}
+
+.all_messages{
+    /* margin: 70px auto; */
+    /* width: 300px; */
+    /* border: 1px solid green; */
+    width: 100%;
+    margin: 20px auto;
+}
+
+.message{
+    /*
+    font-size: 13px;
+    */
+    font-style: italic;
+    /* width: 550px; */
+    width: 70%;
+    /* margin: 10 25px 0 25px; */
+    margin: 10px auto;
+    padding: 15px;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+
+}
+
+.par{
+    /* background-color: darkseagreen; */
+    text-align: right;
+
+    -webkit-box-shadow: 2px 2px 2px #dddddd;
+    -moz-box-shadow: 2px 2px 2px #dddddd;
+    box-shadow: 2px 2px 2px #dddddd;
+}
+.impar{
+    /* background-color: #eeeeee; */
+    text-align: left;
+
+    -webkit-box-shadow: -2px 2px 2px #dddddd;
+    -moz-box-shadow: -2px 2px 2px #dddddd;
+    box-shadow: -2px 2px 2px #dddddd;
+}
+
+.msg_top{
+    margin-bottom: 10px;
+}
+.right{
+    float: right;
+    margin-right: 10px;
+}
+#expresate{
+    font-style: italic;
+    width: 100%;
+    border: 1px solid red;
+    border-radius:2px;
+    padding: 5px;
+    resize: none;
+}
+#postit{
+    color: #ffffff;
+    padding: 10px;
+    background-color: red;
+    border-color: red;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    cursor: hand;
+}
+#postit:hover{
+    background-color: tomato;
+}
+hr{
+    border-top: 1px solid darkgray;
+}
+#charNum{
+    font-size: 10px;
+    font-style: italic;
+    margin-top: 5px;
+}
+span.perro{
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* -------------------- */
+@media all and (max-device-width: 1024px) {
+    .message {
+        width: 900px;
+    }
+    .all_messages{
+        margin: 0px;
+        width: 900px;
+    }
+    .right{
+        maring 20px;
+    }
+    .sendMessage{
+        height: 100;
+    }
+}
+/* -------------------- */
+@media all and (max-device-width: 414px) {
+    .message {
+        width: 290px;
+    }
+    .all_messages{
+        margin: 0px;
+        width: 414px;
+    }
+    .right{
+        maring 20px;
+    }
+    .sendMessage{
+        height: 100;
+    }
+}
+/* -------------------- */
+@media all and (max-device-width: 375px) {
+    .message {
+        width: 250px;
+    }
+    .all_messages{
+        margin: 0px;
+        width: 375px;
+    }
+    .right{
+        maring 20px;
+    }
+    .sendMessage{
+        height: 100;
+    }
+}
+/* -------------------- */
+@media all and (max-device-width: 320px) {
+    .message {
+        width: 200px;
+    }
+    .all_messages{
+        margin: 0px;
+        width: 320px;
+    }
+    .right{
+        maring 20px;
+    }
+    .sendMessage{
+        height: 100;
+    }
+}
