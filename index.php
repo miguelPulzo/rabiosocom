@@ -13,12 +13,44 @@
         <link href='//fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
         <link href='//fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
+
+        <script type='text/javascript'>
+            var googletag = googletag || {};
+            googletag.cmd = googletag.cmd || [];
+            (function() {
+                var gads = document.createElement('script');
+                gads.async = true;
+                gads.type = 'text/javascript';
+                var useSSL = 'https:' == document.location.protocol;
+                gads.src = (useSSL ? 'https:' : 'http:') +
+                    '//www.googletagservices.com/tag/js/gpt.js';
+                var node = document.getElementsByTagName('script')[0];
+                node.parentNode.insertBefore(gads, node);
+            })();
+        </script>
+        <script type='text/javascript'>
+            googletag.cmd.push(function() {
+                googletag.defineSlot('/61457380/BLOCK300X600', [300, 600], 'div-gpt-ad-1440993552649-0').addService(googletag.pubads());
+                googletag.pubads().enableSingleRequest();
+                googletag.enableServices();
+            });
+        </script>
     </head>
 <body>
 
 <header><?=$siteName?></header>
 
-<div class="sidebar-left"></div>
+<div class="sidebar-left">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- adSense300x600 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:300px;height:600px"
+         data-ad-client="ca-pub-6079072908704264"
+         data-ad-slot="6482607294"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
 <div class="container">
     <div class="cuerpo">
         <div class='msg_top'>
@@ -40,7 +72,14 @@
         </div>
     </div>
 </div>
-<div class="sidebar-right"></div>
+<div class="sidebar-right">
+    <!-- /61457380/BLOCK300X600 -->
+    <div id='div-gpt-ad-1440993552649-0' style='height:600px; width:300px;'>
+        <script type='text/javascript'>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1440993552649-0'); });
+        </script>
+    </div>
+</div>
 <!--
 <footer><?=$siteName?> - Una idea de la Gente y para la Gente</footer>
 -->
