@@ -20,8 +20,9 @@
     <script>
   function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 13,
-      center: {lat: 4.7155781, lng: -74.0529183},
+      zoom: 10.13,
+      //center: {lat: 4.7155781, lng: -74.0529183},
+      center: {lat: 51.5045245, lng: -0.0857606},
       disableDefaultUI: true
     });
 
